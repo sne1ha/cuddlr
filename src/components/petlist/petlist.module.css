@@ -1,0 +1,33 @@
+.petList{
+
+    background: rgb(255,220,214);
+    background: linear-gradient(307deg, rgba(255,220,214,1) 0%, rgba(255,239,226,1) 44%);    padding-top: 30px;
+    padding-bottom: 55px;
+    padding-left: 50px;
+    width:1300px
+}
+
+.cardRow{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+    background-color: red;
+    overflow: auto;
+}
+
+.navButton{
+    background-color: #8A9BA8;
+    border-radius: 32px;
+    float: left;
+}
+
+.navButton2{
+    background-color: #8A9BA8;
+    border-radius: 32px;
+    float: right;
+}
+
+.titleRow{
+    margin-bottom: 20px;
+    
+}

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    display:flex; 
+    align-items: center; 
+    justify-content: center; 
+     min-height: 100vh;
+    
+     background-color: rgb(255,220,214);
+     background-image: linear-gradient(307deg, rgba(255,220,214,1) 0%, rgba(255,239,226,1) 44%); ;  
+
+     /* background-color: #f9d29d;
+    background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%); */
+    }
+
+.wrapper,
+.wrapper .img-area,
+.social-icons a,
+.buttons button{
+    background: #ebeffd; 
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff,
+                3px 3px 5px #ceced1; 
+}
+
+.wrapper {
+  margin-top: 40px; 
+    padding: 20px; 
+    width: 850px; 
+    height: 700px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+
+}
+
+.wrapper .img-area{
+    height: 200px;
+    width: 200px; 
+    border-radius: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.img-area .inner-area{
+    /* height: calc(100% - 25px);
+    width: calc(100% - 25px); */
+    border-radius: 50%;
+}
+
+.inner-area img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.wrapper .name{
+    font-size: 23px; 
+    font-weight: 500;
+    color: #31344b;
+    margin: 10px 0 5px 0;
+}
+
+.wrapper .about{
+    font-weight: 400;
+    color: #44476a;
+    font-size: 16px; 
+    margin-bottom: 20px; 
+    padding: 10px;
+}
+
+.wrapper .social-icons{
+    margin: 15px 0 25px 0;
+}
+
+.social-icons a{
+    height: 40px;
+    width: 40px;
+    display: inline-flex; 
+    text-decoration: none; 
+    margin: 0 5px; 
+    border-radius: 50%;
+    position: relative; 
+}
+
+.social-icons a:hover::before,
+.buttons button:hover::before,
+.wrapper .icon:hover::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0; 
+    bottom: 0;
+    right: 0;
+    background: #ebeffd; 
+    border-radius: 50%;
+    box-shadow: inset -3px -3px 7px #ffffff,
+                inset 3px 3px 5px #ebeffd; 
+
+}
+
+.buttons button:hover::before{
+    border-radius: 5px; 
+    z-index: -1; 
+
+}
+
+
+.social-icons a i{
+    text-align: center;
+    width: 100%;
+    height: 100%; 
+    line-height: 40px;
+    position: relative;
+    z-index: 5; 
+}
+
+
+
+
+
+.social-icons a.smile i{
+    color: #e198de;
+    /* smile emoji that shows the animal is really friendly*/
+}
+
+
+.social-icons a.tissues i{
+    text-align: center;
+    color: #98b6e4;
+    
+}
+
+.photo-buttons a.tissues i{
+    text-align: center;
+    color: #98b6e4;
+    
+}
+
+.social-icons a.tree i{
+    text-align: center;
+    color: #548268;
+     /* maybe could also do a USA flag (for a location icon)?*/
+}
+
+.wrapper .buttons{
+    display: flex; 
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttons button{
+    position: relative;
+    width: 100%; 
+    border: none; 
+    outline: none; 
+    padding: 12px 0;
+    font-size: 17px; 
+    font-weight: 400; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #31344b; 
+    z-index: 4; 
+}
+
+.button button:first-child{
+    margin-right: 10px; 
+}
+
+.button button:last-child{
+    margin-left: 10px; 
+}
+
+.wrapper .social-share {
+    display:  flex;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 5px;
+    justify-content: space-between;
+}
+
+/* .row:first-child::before{ background:none; }  */
+
+.social-share .row{
+    color: #31344b;
+    font-size: 17px; 
+    cursor: pointer; 
+    position: relative;
+}
+
+.social-share .row::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #e0e6eb;
+    margin-left: -25px; 
+}
+
+.row:first-child::before{
+    background: none;
+}
+
+.social-share .row i.icon-2 {
+    position: absolute; 
+    top: 50%;
+    left: 0;
+    transform: translateY(-70%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.row:nth-child(1):hover i.icon-2,
+.row:nth-child(2):hover i.icon-2{
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+.wrapper .icon{
+    height: 35px; 
+    width: 35px; 
+    line-height: 35px; 
+    color: #31344b;
+    opacity: 0.7;
+    cursor: pointer; 
+    position: absolute;
+    top: 15px;  
+    text-align: center; 
+}
+
+.wrapper .icon.arrow{
+    left: 25px; 
+}
+
+.wrapper .icon.dots{
+    right: 25px; 
+}
+
+.wrapper .icon i{
+    position: relative;
+    z-index: 5;
+}
+
+.photo-buttons{
+  background: #ecf0f3; 
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff,
+                3px 3px 5px #ceced1; 
+    margin: 10px;
+    padding:8px;
+}

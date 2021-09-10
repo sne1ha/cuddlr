@@ -1,0 +1,50 @@
+.contentCard{
+    /* margin-bottom: 3vh; */
+    border-radius: 8px;
+    border: 2px solid black;
+    height: 310px;
+    overflow: hidden;
+
+    align-items: center; 
+    width:400px;
+    margin: 0px;
+    margin-bottom: 15px;
+    /* background-color: red; */
+
+}
+
+.contentText{
+    text-align: center;
+}
+
+.textBox{
+    text-align: center;
+}
+
+.addButton{
+    position: relative;
+    /* width: 3vw;
+    height: auto; */
+    /* right: 50px; */
+    float: right;
+    /* bottom: inherit; */
+
+    /* background-color: yellow; */
+}
+
+.addButtonBox{
+    /* background-color: red; */
+    position: relative;
+    bottom: -30px;
+    left: 15px;
+    /* top: 50px; */
+    /* bottom: -10px */
+}
+
+.Image{
+    position: relative;
+    margin: 0%;
+    /* top: 50px; */
+    left: 0px;
+}
+

@@ -1,0 +1,25 @@
+.HeaderPane{
+ 
+/* background: rgb(255,220,214);
+background: linear-gradient(307deg, rgba(255,220,214,1) 0%, rgba(255,239,226,1) 44%); */
+background: rgb(255,196,186);
+background: linear-gradient(307deg, rgba(255,196,186,1) 0%, rgba(255,229,209,1) 44%);
+
+
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width:1470px
+}
+
+.HeaderPaneImg{
+    margin-right: 70px;
+    float: right;
+}
+
+
+
+.leftColumn{
+    margin-left: 70px;
+    /* float: left;     */
+
+}

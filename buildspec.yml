@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - yarn install
+  build:
+    commands:
+      - yarn build
+
+artifacts:
+  type: "S3"
+  location: "arn:aws:s3:::test-pet-matcher-ui"
+  name: "/"
+  base-directory: ./build
+  files:
+    - '**/*'
+
+cache:
+  paths:
+    - './node_modules/**/*'
