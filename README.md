@@ -1,5 +1,4 @@
 ## Cuddlr 
-Original Link: https://cuddlr.fiddlingphotographer.com/
 
 A personalized pet adoption website to make the process of finding your companion easier and less stressful. 
 
